@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study | ABCC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=5">
+    <style>
+        body { padding-top: 0; background: #0a0a0a; color: #fff; font-family: 'Outfit', sans-serif; }
+        
+        .cs-wrapper { display: flex; flex-direction: column; min-height: 100vh; }
+        
+        .cs-nav { padding: 2rem 5%; position: absolute; top: 0; width: 100%; z-index: 10; }
+        .back-btn { color: #888; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem; transition: color 0.3s; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; }
+        .back-btn:hover { color: #fff; }
+        
+        .cs-hero { 
+            padding: 10rem 5% 6rem; 
+            background: radial-gradient(circle at center top, rgba(255,87,34,0.15) 0%, rgba(10,10,10,1) 70%);
+            display: flex; flex-direction: column; align-items: center; text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .cs-logo { max-height: 80px; margin-bottom: 2rem; border-radius: 12px; }
+        .cs-role { color: #ff5722; font-weight: 600; font-size: 1rem; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 1rem; }
+        .cs-title { font-size: 5rem; font-family: 'Anton', sans-serif; text-transform: uppercase; letter-spacing: -2px; margin: 0 0 1rem; line-height: 1; }
+        
+        .cs-main { display: grid; grid-template-columns: 1fr; gap: 4rem; padding: 4rem 5%; max-width: 1200px; margin: 0 auto; }
+        @media (min-width: 900px) { .cs-main { grid-template-columns: 1fr 1.5fr; align-items: start; } }
+        
+        .cs-sidebar { position: sticky; top: 2rem; }
+        .cs-content { display: flex; flex-direction: column; gap: 4rem; }
+        
+        .cs-section h2 { font-size: 1.5rem; margin-bottom: 1.5rem; color: #fff; font-weight: 600; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem; }
+        .cs-desc { font-size: 1.1rem; line-height: 1.8; color: #aaa; margin-bottom: 2rem; }
+        
+        .cs-metrics-list { list-style: none; padding: 0; margin: 0; }
+        .cs-metrics-list li { padding: 1rem; background: rgba(255,255,255,0.03); margin-bottom: 0.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); color: #ddd; font-weight: 400; display: flex; gap: 1rem; align-items: flex-start; line-height: 1.5; }
+        .cs-metrics-list li::before { content: "→"; color: #ff5722; font-weight: bold; }
+        
+        .cs-creators-table { width: 100%; border-collapse: collapse; margin-top: 1rem; background: rgba(255,255,255,0.02); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05); }
+        .cs-creators-table th, .cs-creators-table td { padding: 1rem; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .cs-creators-table th { background: rgba(255,255,255,0.05); color: #fff; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; }
+        .cs-creators-table td { color: #aaa; }
+        .cs-creators-table tr:last-child td { border-bottom: none; }
+        .cs-creators-table a { color: #ff5722; text-decoration: none; font-weight: 600; transition: color 0.2s; }
+        .cs-creators-table a:hover { color: #fff; }
+        
+        .cs-video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        .cs-video-item { border-radius: 16px; overflow: hidden; background: #111; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.05); aspect-ratio: 9/16; }
+        .cs-video-item.horizontal { aspect-ratio: 16/9; }
+        .cs-video-item iframe { width: 100%; height: 100%; border: none; }
+        
+        /* Specific height for twitter/x embeds */
+        .cs-video-item.twitter-embed { aspect-ratio: auto; min-height: 400px; }
+        
+        @media (max-width: 600px) {
+            .cs-title { font-size: 3rem; }
+            .cs-hero { padding-top: 8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="cs-wrapper">
+        <nav class="cs-nav">
+            <a href="index.html" class="back-btn">← Back to Portfolio</a>
+        </nav>
+        <div id="cs-content"></div>
+    </div>
+
+    <script src="data.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get('id');
+        const data = window.projectData[id];
+        
+        if (data) {
+            document.title = data.name + " | ABCC Case Study";
+            
+            const logoHtml = data.logo ? `<img src="${data.logo}" class="cs-logo" alt="${data.name} logo">` : '';
+            const desc = data.description || data.desc || '';
+            
+            let metricsHtml = '';
+            if (data.metrics && data.metrics.length) {
+                metricsHtml = `
+                    <div class="cs-section">
+                        <h2>Key Results & Focus</h2>
+                        <ul class="cs-metrics-list">
+                            ${data.metrics.map(m => `<li>${m}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+
+            let creatorsHtml = '';
+            if (data.creators && data.creators.length) {
+                creatorsHtml = `
+                    <div class="cs-section">
+                        <h2>Creators Worked With</h2>
+                        <table class="cs-creators-table">
+                            <thead>
+                                <tr>
+                                    <th>Creator</th>
+                                    <th>Profile Link</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${data.creators.map(c => `
+                                    <tr>
+                                        <td>${c.name}</td>
+                                        <td><a href="${c.link}" target="_blank" rel="noopener noreferrer">View Profile ↗</a></td>
+                                    </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+                `;
+            }
+
+            let videosHtml = '';
+            if (data.videos && data.videos.length) {
+                videosHtml = `
+                    <div class="cs-section">
+                        <h2>Content Highlights</h2>
+                        <div class="cs-video-grid">
+                            ${data.videos.map(v => {
+                                const isTwitter = v.includes('x.com') || v.includes('twitter.com');
+                                const isYoutube = v.includes('youtube.com') || v.includes('youtu.be');
+                                const className = isTwitter ? 'cs-video-item twitter-embed' : (isYoutube ? 'cs-video-item horizontal' : 'cs-video-item');
+                                
+                                if (isTwitter) {
+                                    return `<div class="${className}"><iframe src="https://twitframe.com/show?url=${encodeURIComponent(v)}" allowfullscreen loading="lazy"></iframe></div>`;
+                                }
+                                return `<div class="${className}"><iframe src="${v}" allowfullscreen loading="lazy"></iframe></div>`;
+                            }).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+
+            document.getElementById('cs-content').innerHTML = `
+                <header class="cs-hero">
+                    ${logoHtml}
+                    <div class="cs-role">${data.role || 'Content Strategy'}</div>
+                    <h1 class="cs-title">${data.name}</h1>
+                </header>
+                
+                <main class="cs-main">
+                    <aside class="cs-sidebar">
+                        <div class="cs-section">
+                            <h2>Campaign Overview</h2>
+                            <div class="cs-desc">${desc.replace(/\n/g, '<br>')}</div>
+                        </div>
+                        ${metricsHtml}
+                    </aside>
+                    
+                    <section class="cs-content">
+                        ${creatorsHtml}
+                        ${videosHtml}
+                    </section>
+                </main>
+            `;
+        } else {
+            document.getElementById('cs-content').innerHTML = '<div style="text-align:center; padding: 20rem 0;"><h1 class="cs-title" style="font-size:3rem;">Case study not found.</h1><p style="color:#888;">The requested project could not be loaded.</p></div>';
+        }
+    </script>
+</body>
+</html>

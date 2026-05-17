@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ABCC | Any Body / Brand Can Create</title>
+    <meta name="description" content="We turn your expertise into a high-leverage content engine. Scale your personal or company brand with viral short-form content.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo-link"><img src="assets/logo_transparent.png" alt="ABCC Logo" class="nav-logo"></a>
+            <div class="nav-links" id="nav-links">
+                <a href="#home">Home</a>
+                <a href="#work">Our Work</a>
+                <a href="#pricing">Our Packages</a>
+                <a href="#about">About Us</a>
+            </div>
+            <a href="https://calendly.com/lochanmaheshwari23/new-meeting" target="_blank" class="btn btn-primary nav-cta">SCHEDULE A CALL</a>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <video autoplay muted loop playsinline class="hero-video" id="heroVideo">
+            <source src="assets/Sonder_%20The%20Realization%20That%20Everyone%20Has%20A%20Story_1080p.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content-container">
+            <h1 class="hero-title">
+                <span class="static-text">ANY&nbsp;</span>
+                <div class="word-slider">
+                    <ul class="word-slider-inner"></ul>
+                </div>
+                <span class="static-text">&nbsp;CAN CREATE.</span>
+            </h1>
+        </div>
+        <a href="#work" class="hero-explore-btn">EXPLORE OUR WORK</a>
+        <div class="hero-tagline">
+            <p>We at ABCC believe <strong>anybody can create.</strong> Content isn't magic. It's <strong>craft.</strong> Every body, brand, builder, beginner carries a story.</p>
+            <p>Every person sees the world a little differently — and someone out there is waiting to hear it. We pull it out of you, shape it through storytelling, and sharpen it with an understanding of the people on the other side.</p>
+        </div>
+    </section>
+
+    <section id="work" class="work-section">
+        <div class="container">
+            <span class="section-label">Our Work</span>
+            <h2 class="section-title">Industries We've Scaled</h2>
+
+            <div class="niche-tabs" id="nicheTabs">
+                <button class="niche-tab active" data-niche="AI">AI</button>
+                <button class="niche-tab" data-niche="EdTech">EdTech</button>
+                <button class="niche-tab" data-niche="Fintech">Fintech</button>
+                <button class="niche-tab" data-niche="Real Estate">Real Estate</button>
+                <button class="niche-tab" data-niche="Personal Brands">Personal Brands</button>
+                <button class="niche-tab" data-niche="Others">Others</button>
+            </div>
+
+            <div class="niche-graph-wrapper">
+                <div class="niche-graph" id="nicheGraph">
+                    <svg class="graph-svg" id="graphSvg"></svg>
+                    <div class="center-node" id="centerNode">
+                        <span id="centerLabel">AI</span>
+                    </div>
+                    <div id="brandNodesContainer"></div>
+                </div>
+                <div class="brand-detail" id="brandDetail">
+                    <div class="brand-detail-inner" id="brandDetailInner">
+                        <p class="brand-detail-placeholder">← Click any brand to see what we built for them.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (Founder Context) -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <span class="section-label">Meet the Founders</span>
+            <h2 class="section-title">The Brains Behind ABCC</h2>
+            
+            <div class="founders-grid">
+                <!-- Lochan -->
+                <div class="founder-card">
+                    <img src="assets/lochan.png" alt="Lochan" class="founder-img">
+                    <div class="founder-info">
+                        <h3 class="founder-name">Lochan</h3>
+                        <p class="founder-role">Co-Founder & Strategist</p>
+                        <p class="founder-desc">I grew up in a small town in Rajasthan, India, and studied engineering. Somewhere along the way, I realized I was more interested in how ideas spread than just how systems work.</p>
+                        <p class="founder-desc">I have worked extensively on figuring out how stories travel, why certain ideas stick, and how attention works online. Over the years, that curiosity has helped me scale brands from 0 to over a million followers across AI, EdTech, FinTech, and politics. I still think like an engineer, but I create like a storyteller.</p>
+                    </div>
+                </div>
+
+                <!-- June -->
+                <div class="founder-card">
+                    <img src="assets/june.png" alt="June" class="founder-img">
+                    <div class="founder-info">
+                        <h3 class="founder-name">June</h3>
+                        <p class="founder-role">Co-Founder & Creative Director</p>
+                        <p class="founder-desc">A classically trained singer, a fierce debater, and someone who has always been deeply in love with content creation.</p>
+                        <p class="founder-desc">What started as a passion for performance naturally evolved into a mastery of digital storytelling. June understands the rhythm of human emotion—how to hold an audience's attention, how to make a message resonate, and how to turn passive scrollers into highly engaged communities. She is the creative pulse of ABCC.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="process-section">
+        <div class="container">
+            <h2 class="process-headline">How we build you.</h2>
+            
+            <div class="process-list">
+                <div class="process-item">
+                    <div class="process-number">01</div>
+                    <div class="process-content">
+                        <h3>Audit & Positioning</h3>
+                        <p>We audit your brand, define your unique angle, and build a content strategy that attracts your ideal audience. We map your exact positioning before touching a camera.</p>
+                        <ul class="process-tags">
+                            <li>ICP Mapping</li>
+                            <li>Visual Branding</li>
+                            <li>Competitor Analysis</li>
+                            <li>Content Pillars</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-item">
+                    <div class="process-number">02</div>
+                    <div class="process-content">
+                        <h3>Scripting & Filming</h3>
+                        <p>We write highly engaging, psychology-driven scripts. You film just 3-5 hours a month — we turn that raw footage into 40-50 ready-to-post, high-retention assets.</p>
+                        <ul class="process-tags">
+                            <li>Hook Science</li>
+                            <li>Story Structuring</li>
+                            <li>Teleprompter Ready</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-item">
+                    <div class="process-number">03</div>
+                    <div class="process-content">
+                        <h3>Distribution & Growth</h3>
+                        <p>We handle posting across TikTok, Reels, and Shorts. We track KPIs, test thumbnails, and optimize every single week to maximize organic reach.</p>
+                        <ul class="process-tags">
+                            <li>Multi-Platform</li>
+                            <li>A/B Testing</li>
+                            <li>Algorithm Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-item">
+                    <div class="process-number">04</div>
+                    <div class="process-content">
+                        <h3>Results & Scale</h3>
+                        <p>Within 90 days, you transition from unknown to authoritative. We build a recognizable personal brand and a predictable flow of inbound opportunities.</p>
+                        <ul class="process-tags">
+                            <li>Inbound DMs</li>
+                            <li>Authority Scaling</li>
+                            <li>Profile Traffic</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <span class="section-label">Pricing</span>
+            <h2 class="section-title">Choose Your Growth Plan</h2>
+            
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Launch</h3>
+                    <p class="price">Starter</p>
+                    <p class="card-desc">Perfect for testing the waters</p>
+                    <ul class="features">
+                        <li>10 high-quality edits/mo</li>
+                        <li>Brand Strategy Session</li>
+                        <li>Content Calendar</li>
+                        <li>Scriptwriting & Hooks</li>
+                        <li>Basic Distribution</li>
+                    </ul>
+                    <a href="https://calendly.com/lochanmaheshwari23/new-meeting" target="_blank" class="btn btn-outline">Choose This Plan</a>
+                </div>
+                
+                <div class="price-card popular">
+                    <span class="popular-badge">Popular</span>
+                    <h3>Accelerate</h3>
+                    <p class="price">Growth</p>
+                    <p class="card-desc">For founders ready to dominate</p>
+                    <ul class="features">
+                        <li>20 high-quality edits/mo</li>
+                        <li>Lead Generation Strategy</li>
+                        <li>Brand Visual Guidelines</li>
+                        <li>Dedicated Project Manager</li>
+                        <li>Monthly Performance Report</li>
+                        <li>Full Platform Distribution</li>
+                    </ul>
+                    <a href="https://calendly.com/lochanmaheshwari23/new-meeting" target="_blank" class="btn btn-primary">Choose This Plan</a>
+                </div>
+                
+                <div class="price-card">
+                    <h3>Overdrive</h3>
+                    <p class="price">Scale</p>
+                    <p class="card-desc">Complete market takeover</p>
+                    <ul class="features">
+                        <li>30 high-quality edits/mo</li>
+                        <li>90-Day Growth Guarantee</li>
+                        <li>Tribe Building Framework</li>
+                        <li>Priority 24/7 Support</li>
+                        <li>Unlimited Revisions</li>
+                        <li>Omnichannel Strategy</li>
+                    </ul>
+                    <a href="https://calendly.com/lochanmaheshwari23/new-meeting" target="_blank" class="btn btn-outline">Choose This Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <span class="section-label">FAQs</span>
+            <h2 class="section-title">Before You Book</h2>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">Who can benefit from this? <span class="icon">+</span></button>
+                    <div class="accordion-content">
+                        <p>If you're an entrepreneur, coach, media business, funded startup, or podcast looking to build authority online — this is for you. We craft content tailored to your niche, your voice, and the platforms where your audience already lives.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">How soon can I expect results? <span class="icon">+</span></button>
+                    <div class="accordion-content">
+                        <p>While virality can happen quickly, sustainable authority builds over time. Most clients see significant shifts in engagement and inbound leads within 60-90 days of consistent posting.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Why work with us instead of hiring a freelancer? <span class="icon">+</span></button>
+                    <div class="accordion-content">
+                        <p>Freelancers usually execute what you tell them. We act as strategic partners. We bring the strategy, scripting, editing, and distribution insights so you don't have to manage the process.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Case Studies -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close" aria-label="Close Modal">&times;</button>
+            <div id="modal-body">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Ready to Create?</h2>
+            <p>Stop wasting hours on content that doesn't convert. Let's build your engine.</p>
+            <a href="https://calendly.com/lochanmaheshwari23/new-meeting" target="_blank" class="btn btn-primary large">Book a Discovery Call</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 ABCC. Any Body / Brand Can Create. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
