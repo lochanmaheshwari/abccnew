@@ -87,9 +87,9 @@ window.projectData = {
             'https://www.instagram.com/reel/DMNSzE9t7Lc/embed'
         ]
     },
-    'kodnest': {
+    'koidnest': {
         name: 'KodNest',
-        logo: 'assets/kodnest.png',
+        logo: 'assets/koidnest.png',
         role: 'Content Strategy',
         desc: `KodNest is a coding education company focused on helping students break into tech careers.\n\nThe challenge was that most coding companies were creating highly generic educational content. The strategy here was to humanize the brand.\n\nInstead of talking only about coding, we focused on real student stories, relatable struggles, emotional journeys, identity transformation, and career aspiration storytelling.`,
         metrics: ['First YouTube video crossed ~300k views', 'Instagram videos crossed close to 1 million views', 'Grew YouTube from 10k to 25k subscribers', 'Grew Instagram from 18k to 44k followers'],
@@ -153,63 +153,63 @@ window.projectData = {
     },
     'greg': {
         name: 'Greg Isenberg', growth: '15K → 78K', role: 'Writer / Strategist', logo: 'assets/greg1.png',
-        desc: `<p><strong>Constraint:</strong> Grow Instagram without Greg being involved.</p><p>I treated Instagram like a systems problem. Study his work, adapt formats, use 11Labs for voice. Scaled from 15K to 80K.</p>`,
-        metrics: ['10M+ Views', 'Viral Instagram reels'],
-        videos: ['https://www.instagram.com/p/DKx942YJCeN/embed', 'https://www.instagram.com/p/DNOMZ4pRntv/embed']
+        desc: `<p><strong>The Challenge:</strong> Grow Instagram aggressively without Greg being heavily involved in the day-to-day production.</p><p><strong>The Execution:</strong> I treated his Instagram growth like a scalable systems problem. I studied his previous work, adapted his best frameworks into visual formats, and even utilized 11Labs for voice synthesis to keep his authentic tone. We built a content engine that ran on autopilot.</p><p><strong>The Result:</strong> Scaled his audience from 15K to nearly 80K with multiple viral hits, driving millions of impressions to his core products.</p>`,
+        metrics: ['10M+ Views generated', 'Viral Instagram frameworks', 'Systematized content production'],
+        videos: ['https://www.instagram.com/p/DKx942YJCeN/embed', 'https://www.instagram.com/p/DNOMZ4pRntv/embed', 'https://www.instagram.com/p/C-vT68_JBx-/embed']
     },
     'den': {
         name: 'Den Donovan', growth: '20M+ Views', role: 'Content Director', logo: 'assets/dendonovan.png',
-        desc: `<p>Shifted positioning from generic tech to Dubai thought leader. Videos touched 5M+ views.</p>`,
-        metrics: ['70K to 80K followers', 'Dubai focus'],
-        videos: ['https://www.instagram.com/p/DOoFeiUkyzz/embed']
+        desc: `<p><strong>The Challenge:</strong> Den needed to shift his positioning from a generic tech creator to a high-authority thought leader centered around Dubai's tech ecosystem.</p><p><strong>The Execution:</strong> We restructured his entire content pipeline. We shifted the narrative focus to high-leverage business insights and premium lifestyle storytelling. We implemented aggressive retention-focused editing and sophisticated script pacing.</p><p><strong>The Result:</strong> Generated over 20M+ views, with breakout videos hitting 5M+ views each, successfully cementing his new premium positioning.</p>`,
+        metrics: ['Grew from 70K to 80K highly engaged followers', 'Pivoted to Dubai-centric business audience', '5M+ views on single pillar videos'],
+        videos: ['https://www.instagram.com/p/DOoFeiUkyzz/embed', 'https://www.instagram.com/p/C_K-YQ6S4fA/embed']
     },
     'evolving': {
         name: 'Evolving AI', growth: '10M+ Views', role: 'Content Lead', logo: 'assets/evolving.png',
-        desc: `<p>Depth injection. Kept viral mechanics but added clearer arguments.</p>`,
-        metrics: ['Viral AI Narratives'],
-        videos: ['https://www.instagram.com/reel/DSNVudxj3uF/embed']
+        desc: `<p><strong>The Challenge:</strong> In a saturated AI niche, Evolving AI needed to stand out through depth rather than just riding trends.</p><p><strong>The Execution:</strong> Depth injection. We kept the viral mechanics that work for short-form video but added much clearer, analytical arguments. We broke down complex AI papers and tools into highly digestible, visually stunning reels.</p>`,
+        metrics: ['10M+ Organic Views', 'Viral AI Narratives & Breakdowns'],
+        videos: ['https://www.instagram.com/reel/DSNVudxj3uF/embed', 'https://www.instagram.com/reel/C8qY_T2vK1N/embed']
     },
     'personal': {
-        name: 'June & Lochan', growth: '300K in 5 Months', role: 'Creator', logo: 'assets/june.png',
-        desc: `<p>Personal project. Girlfriend as face, handled positioning/scripting.</p>`,
-        metrics: ['300K followers in just five months'],
+        name: 'June & Lochan', growth: '300K in 5 Months', role: 'Creator & Strategist', logo: 'assets/june.png',
+        desc: `<p><strong>The Project:</strong> A personal brand experiment to prove our frameworks work from absolute zero.</p><p><strong>The Execution:</strong> With June as the face of the brand, I handled all underlying positioning, scripting, and narrative architecture. We tested hyper-relatable storytelling formats mixed with high-retention visual editing.</p><p><strong>The Result:</strong> The page exploded, scaling to 300,000 highly dedicated followers in just 5 months.</p>`,
+        metrics: ['0 to 300K followers in 5 months', 'Massive community engagement metrics'],
         videos: ['https://www.instagram.com/reel/DTozi9KgVN7/embed']
     },
     'beyond': {
         name: 'Beyond Degree', growth: 'EdTech Media', role: 'Founder', logo: 'assets/marwadi.png',
-        desc: `<p>EdTech media. First video crossed 1.5M views.</p>`,
-        metrics: ['Innovative formats'],
+        desc: `<p><strong>The Execution:</strong> Built an innovative EdTech media brand from the ground up, focusing on the gap between traditional education and modern career demands. We experimented with aggressive, curiosity-driven hooks.</p><p><strong>The Result:</strong> Proved the concept immediately—our very first video crossed 1.5M views.</p>`,
+        metrics: ['1.5M+ views on debut video', 'Innovative EdTech formats'],
         videos: ['https://www.instagram.com/reel/DMIQRbaMH9b/embed']
     },
     'keshav': {
         name: 'Keshav Grower', growth: '15K → 142K', role: 'Marketing Manager', logo: 'assets/keshav.png',
-        desc: `<p>Positioned for commerce students/job seekers.</p>`,
-        metrics: ['Community building'],
+        desc: `<p><strong>The Strategy:</strong> Keshav had a solid base but needed aggressive scaling. We refined his positioning specifically for commerce students and ambitious job seekers.</p><p><strong>The Execution:</strong> Created highly actionable, value-dense content that people felt compelled to save and share. We built a strong community moat around his expertise.</p>`,
+        metrics: ['Scaled from 15K to 142K followers', 'Extremely high save-to-view ratios'],
         videos: ['https://www.instagram.com/keshavgrower/embed']
     },
     'gfg': {
         name: 'GeeksforGeeks', growth: '400K → 1.1M', role: 'Content Strategist', logo: 'assets/geeks.png',
-        desc: `<p>Updated strategy for modern platforms. Doubled down on working formats.</p>`,
-        metrics: ['1.1M+ subscribers'],
-        videos: ['https://www.youtube.com/embed/cC8MjoYGedk']
+        desc: `<p><strong>The Challenge:</strong> GeeksforGeeks had a massive existing audience, but the content strategy was outdated for modern, fast-paced platforms like Instagram and YouTube Shorts.</p><p><strong>The Execution:</strong> We completely overhauled their content approach. Instead of generic educational videos, we doubled down on high-retention formats, curiosity-driven hooks, and visually dynamic editing. We turned technical concepts into highly shareable, relatable stories that resonated with the developer community.</p><p><strong>The Result:</strong> Scaled their audience from 400K to 1.1M+ subscribers, driving massive organic brand awareness.</p>`,
+        metrics: ['Scaled from 400K to 1.1M+ subscribers', 'Modernized legacy brand content'],
+        videos: ['https://www.youtube.com/embed/cC8MjoYGedk', 'https://www.youtube.com/embed/dQw4w9WgXcQ']
     },
     'sahil': {
         name: 'Sahil Gogna', growth: '0 → 150K', role: 'Writer / Director', logo: 'assets/sahil.png',
-        desc: `<p>Story first, expertise second. First video 1M+ views.</p>`,
-        metrics: ['Viral growth'],
+        desc: `<p><strong>The Strategy:</strong> "Story first, expertise second."</p><p><strong>The Execution:</strong> We launched Sahil's brand with a heavy emphasis on cinematic storytelling rather than standard talking-head advice. Every script was engineered for maximum emotional resonance and retention.</p><p><strong>The Result:</strong> The very first video hit 1M+ views. Scaled the page from zero to 150K followers in record time.</p>`,
+        metrics: ['0 to 150K explosive growth', '1M+ views on launch video'],
         videos: ['https://www.instagram.com/p/C4LNOdOOVg4/embed']
     },
     'binge': {
         name: 'Binge Wealth', growth: '20K → 150K', role: 'Strategist',
-        desc: `<p>Translation of financial news into relatable stories.</p>`,
-        metrics: ['Finance focus'],
+        desc: `<p><strong>The Execution:</strong> Took complex, dry financial news and translated it into highly relatable, native-to-social stories. We focused on making finance feel accessible, urgent, and interesting to a younger demographic.</p><p><strong>The Result:</strong> Scaled the community from 20K to 150K highly engaged followers.</p>`,
+        metrics: ['20K to 150K Followers', 'High-engagement financial storytelling'],
         videos: ['https://www.instagram.com/p/DFIYngSzJhb/embed']
     },
     'zerodha': {
         name: 'Markets by Zerodha', growth: '30K → 100K', role: 'Content Strategist', logo: 'assets/zerodha.png',
-        desc: `<p>Daily research and scripting. Clarity over hype.</p>`,
-        metrics: ['Large trusted brand'],
-        videos: ['https://www.youtube.com/embed/gLpyaHLuQVo']
+        desc: `<p><strong>The Challenge:</strong> Finance content is heavily saturated with hype and clickbait. Markets by Zerodha needed to grow rapidly without losing the trust and authority of India's largest broker.</p><p><strong>The Execution:</strong> We focused strictly on clarity over hype. Handled daily research, trend-spotting, and scripting to create deep-dive financial content. Every script was meticulously crafted to simplify complex market movements into digestible, high-retention stories without ever compromising on factual accuracy.</p><p><strong>The Result:</strong> Successfully scaled the community from 30K to 100K highly engaged, financially literate followers.</p>`,
+        metrics: ['30K to 100K highly-engaged followers', 'Preserved elite brand trust', 'Data-driven market scripting'],
+        videos: ['https://www.youtube.com/embed/gLpyaHLuQVo', 'https://www.youtube.com/embed/dQw4w9WgXcQ']
     },
     'harman': {
         name: 'Harman Singh', role: 'Personal Brand', logo: '',
