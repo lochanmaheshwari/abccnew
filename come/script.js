@@ -204,9 +204,9 @@ function initNicheGraph() {
     function showDetail(id) {
         const info = getInfo(id);
         if (info && info.link) {
-            window.open(info.link, '_blank');
+            window.open(info.link, '_self');
         } else {
-            window.open('case-study.html?id=' + id, '_blank');
+            window.open('case-study.html?id=' + id, '_self');
         }
     }
 
