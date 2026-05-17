@@ -101,7 +101,7 @@ function initNicheGraph() {
         'pw':         'assets/physicswallah.png',
         'gfg':        'assets/geeks.png',
         'codninjas':  'assets/codingninjas.png',
-        'koidnest':   'assets/koidnest.png',
+        'kodnest':   'assets/kodnest.png',
         'marwadi':    'assets/marwadi.png',
         'masai':      'assets/masai.png',
         'zerodha':    'assets/zerodha.png',
