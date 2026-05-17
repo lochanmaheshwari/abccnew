@@ -87,9 +87,9 @@ window.projectData = {
             'https://www.instagram.com/reel/DMNSzE9t7Lc/embed'
         ]
     },
-    'koidnest': {
+    'kodnest': {
         name: 'KodNest',
-        logo: 'assets/koidnest.png',
+        logo: 'assets/kodnest.png',
         role: 'Content Strategy',
         desc: `KodNest is a coding education company focused on helping students break into tech careers.\n\nThe challenge was that most coding companies were creating highly generic educational content. The strategy here was to humanize the brand.\n\nInstead of talking only about coding, we focused on real student stories, relatable struggles, emotional journeys, identity transformation, and career aspiration storytelling.`,
         metrics: ['First YouTube video crossed ~300k views', 'Instagram videos crossed close to 1 million views', 'Grew YouTube from 10k to 25k subscribers', 'Grew Instagram from 18k to 44k followers'],
